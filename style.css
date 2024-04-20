@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #fe7070;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav {
+  flex: 2;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 40px;
+  font-family: "Times New Roman", Times, serif; 
+  font-weight: bold; 
+  font-size: 19px; 
+  letter-spacing: 2px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  display: flex;
+  height: 100vh; 
+}
+
+.content {
+  flex: 1;
+  padding: 80px;
+  padding-top: 100px;
+  background: linear-gradient(to right, hwb(48 62% 0%) , #f6d8d9 );
+}
+.content h1{
+  padding-bottom: 30px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  font-size: 48px; 
+  letter-spacing:8.5px;
+}
+
+.content p{
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.4;
+  font-size: 18px;
+
+}
+
+.content button{
+  margin-top: 45px;
+  background-color: #fe7170;
+  padding: 13px;
+  width: 32%;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.image {
+  flex: 1.25;
+  background-image: url("pexels-robin-stickel-70497.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image img { 
+  opacity: 0; 
+  height: 100%; 
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row; 
+  }
+  .nav {
+    text-align: left; 
+    padding: 10px; 
+  }
+  .nav li {
+    margin: 5px; 
+    font-size: 16px; 
+  }
+  .content {
+    padding: 20px; 
+    h1 {
+      padding-top: 10px;
+      font-size: 32px; 
+    }
+    p {
+      font-size: 14.5px; 
+    }
+    button{
+      padding: 7.1px;
+    }
+  }
+}
+
